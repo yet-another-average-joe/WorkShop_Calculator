@@ -1,0 +1,356 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\CLASSES\CLASSES_rc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\CLASSES\\CLASSES_rc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DrillCalcppc.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DrillCalc.ico"
+CLASSES_IDI_UP_DISABLED ICON                    "..\\CLASSES\\res\\Up_d.ico"
+CLASSES_IDI_UP          ICON                    "..\\CLASSES\\res\\Up.ico"
+CLASSES_IDI_REC_DISABLED ICON                    "..\\CLASSES\\res\\Check_d.ico"
+CLASSES_IDI_REC         ICON                    "..\\CLASSES\\res\\Check.ico"
+CLASSES_IDI_EDIT_DISABLED ICON                    "..\\CLASSES\\res\\Edit_d.ico"
+CLASSES_IDI_EDIT        ICON                    "..\\CLASSES\\res\\Edit.ico"
+CLASSES_IDI_DOWN_DISABLED ICON                    "..\\CLASSES\\res\\Down_d.ico"
+CLASSES_IDI_DOWN        ICON                    "..\\CLASSES\\res\\Down.ico"
+CLASSES_IDI_DEL_DISABLED ICON                    "..\\CLASSES\\res\\Delete_d.ico"
+CLASSES_IDI_DEL         ICON                    "..\\CLASSES\\res\\Delete.ico"
+CLASSES_IDI_CANCEL_DISABLED ICON                    "..\\CLASSES\\res\\Undo_d.ico"
+CLASSES_IDI_CANCEL      ICON                    "..\\CLASSES\\res\\Undo.ico"
+CLASSES_IDI_ADD_DISABLED ICON                    "..\\CLASSES\\res\\Add_d.ico"
+CLASSES_IDI_ADD         ICON                    "..\\CLASSES\\res\\Add.ico"
+CLASSES_IDI_COPY        ICON                    "..\\CLASSES\\res\\Copy.ico"
+CLASSES_IDI_COPY_DISABLED ICON                    "..\\CLASSES\\res\\Copy_d.ico"
+CLASSES_IDI_PASTE       ICON                    "..\\CLASSES\\res\\Paste.ico"
+CLASSES_IDI_PASTE_DISABLED ICON                    "..\\CLASSES\\res\\Paste_d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "WrkShpCalc",                  CLASSES_IDM_WRKSHPCALC
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Mode édition",                CLASSES_IDM_MODE_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "Nouveau fichier",             CLASSES_IDM_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Enregistrer",                 CLASSES_IDM_FILE_SAVE
+        MENUITEM "Enregistrer sous",            CLASSES_IDM_FILE_SAVE_AS
+        MENUITEM "Enregistrer une copie sous",  CLASSES_IDM_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "A propos",                    CLASSES_IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "FileDescription", "Coupe - perçage"
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "DrillCalc"
+            VALUE "LegalCopyright", "© 2010-2013 jft / www.cambouis.com"
+            VALUE "OriginalFilename", "DrillCalc.exe"
+            VALUE "ProductName", "Projet WorkShopCalc"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PAGE_MEMENTO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 113
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_MEMENTO DIALOG  0, 0, 150, 148
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Memento"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Vc = vitesse de coupe en m/mn",IDC_STATIC2,12,24,123,8
+    LTEXT           "N = fréquence de rotation en mn-1",IDC_STATIC3,12,36,127,8
+    LTEXT           "D = diamètre d'outil en mm",IDC_STATIC4,12,48,110,8
+    CTEXT           "N = 1000 . Vc / ( pi . D )",IDC_STATIC5,30,66,90,10,WS_BORDER
+    LTEXT           "Vitesse d'avance:",IDC_STATIC6,2,84,72,8
+    LTEXT           "Vf = vitesse d'avance en mm/mn",IDC_STATIC7,10,102,120,8
+    LTEXT           "f = avance par tour en mm",IDC_STATIC8,10,114,107,8
+    CTEXT           "Vf = f . N",IDC_STATIC9,52,135,42,10,WS_BORDER
+    LTEXT           "Vitesse de coupe : ",IDC_STATIC1,2,6,79,8
+END
+
+IDD_PAGE_COND DIALOG  0, 0, 147, 190
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Conditions"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        CLASSES_IDC_COMBO_TOOL,3,2,142,12,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CLASSES_IDC_COMBO_CAT,3,19,144,12,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nuance:",CLASSES_IDC_STATIC_ALLOY,3,37,31,8
+    COMBOBOX        CLASSES_IDC_COMBO_ALLOY,36,36,97,12,CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Vc (m/mn):",CLASSES_IDC_STATIC_VC,37,57,38,8
+    EDITTEXT        CLASSES_IDC_EDIT_VCMIN,78,55,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A0,106,57,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_VCMAX,116,55,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "D (mm):",CLASSES_IDC_STATIC_D,28,75,30,8
+    LTEXT           "Avance/dent (mm):",CLASSES_IDC_STATIC_FEED,78,75,63,8
+    EDITTEXT        CLASSES_IDC_EDIT_D1,28,88,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN1,76,88,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A1,109,90,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX1,116,87,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D2,28,98,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN2,76,98,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A2,109,102,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX2,116,98,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D3,28,109,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN3,76,109,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A3,109,113,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX3,116,109,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D4,28,121,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN4,76,121,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A4,110,125,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX4,116,121,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D5,28,133,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN5,76,133,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A5,109,137,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX5,116,133,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D6,28,145,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN6,76,145,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A6,109,150,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX6,116,145,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D7,28,159,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN7,76,159,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A7,109,163,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX7,116,159,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_D8,28,172,18,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        CLASSES_IDC_EDIT_FMIN8,76,172,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "à",CLASSES_IDC_STATIC_A8,109,177,10,8
+    EDITTEXT        CLASSES_IDC_EDIT_FMAX8,116,172,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DEL,0,54,16,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_COPY,0,75,15,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_PASTE,0,94,15,14,NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_PAGE_CALC DIALOG  0, 0, 150, 110
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Calcul"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        CLASSES_IDC_COMBO_TOOL,20,2,101,12,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        CLASSES_IDC_COMBO_CAT,20,19,112,12,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nuance:",CLASSES_IDC_STATIC_ALLOY,20,37,31,8
+    COMBOBOX        CLASSES_IDC_COMBO_ALLOY,50,36,69,12,CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "D (mm):",CLASSES_IDC_STATIC_D,25,54,34,8
+    EDITTEXT        CLASSES_IDC_EDIT_D,25,66,33,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Vc (m/mn):",CLASSES_IDC_STATIC_VC,67,54,38,8
+    EDITTEXT        CLASSES_IDC_EDIT_VC,67,66,33,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "N (mn-1)",CLASSES_IDC_STATIC_N,108,54,39,8
+    EDITTEXT        CLASSES_IDC_EDIT_N,108,66,33,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "f (mm/tour):",CLASSES_IDC_STATIC_F,25,84,43,8
+    EDITTEXT        CLASSES_IDC_EDIT_F,25,96,33,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Vf (mm/mn):",CLASSES_IDC_STATIC_VF,67,84,44,8
+    EDITTEXT        CLASSES_IDC_EDIT_VF,67,96,33,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "DrillCalc\n\nDrillCalc\nDrillCalc Files (*.drl)\n.drl\nDrillCalc.Document\nDrillCalc.Document"
+    IDS_FILE_EXT            "drl"
+    IDS_ORPHAN_RECORDS      "Enregistrements orphelins détectés"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU                "Menu"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Drillcalc"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_PASTE           "Insère le contenu du presse-papiers\nColler"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\DrillCalcppc.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
