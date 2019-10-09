@@ -1,0 +1,319 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "CLASSES_rc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "CLASSES_rc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CLASSES_IDD_FILE_SAVE_PORTRAIT DIALOG  0, 0, 156, 105
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Boîte de dialogue"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        CLASSES_IDC_EDIT_FILENAME,42,18,108,12,ES_AUTOHSCROLL
+    LISTBOX         CLASSES_IDC_LISTBOX_DATAFILE,42,36,108,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nom:",CLASSES_IDC_STATIC_FILENAME,6,18,18,8
+    LTEXT           "Fichiers:",CLASSES_IDC_STATIC_FILES,6,36,30,8
+END
+
+CLASSES_IDD_MATFILE_LOAD DIALOG  0, 0, 156, 117
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Nouveau fichier d'outils"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX         CLASSES_IDC_LISTBOX_MATFILE,42,42,108,36,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        CLASSES_IDC_EDIT_COMMENT,6,84,144,30,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "Choisissez le fichier de matières auquel sera associé le nouveau fichier d'outils:",IDC_STATIC,6,20,144,20
+    LTEXT           "Fichiers:",CLASSES_IDC_STATIC_FILES,6,42,30,8
+END
+
+CLASSES_IDD_CAT_MISSING_PORTRAIT DIALOG  0, 0, 156, 117
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enregistrements orphelins détectés"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Certains outils font référence à une ou plusieurs matières qui n'existent plus.",CLASSES_IDC_STATIC1,6,41,144,23
+    LTEXT           "Les enregistrements orphelins vont être supprimés, et le fichier sera mis à jour afin de rétablir la cohérence de la base de données.",CLASSES_IDC_STATIC2,6,67,144,38
+    LTEXT           "Static",CLASSES_IDC_STATIC_FILENAME,5,26,139,8
+END
+
+CLASSES_IDD_CAT_MISSING_LANDSCAPE DIALOG  0, 0, 210, 98
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enregistrements orphelins détectés"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Certains outils font référence à une ou plusieurs matières qui n'existent plus.",CLASSES_IDC_STATIC1,3,42,203,22
+    LTEXT           "Les enregistrements orphelins vont être supprimés, et le fichier sera mis à jour afin de rétablir la cohérence de la base de données.",CLASSES_IDC_STATIC2,3,64,204,30
+    LTEXT           "Static",CLASSES_IDC_STATIC_FILENAME,4,22,187,8
+END
+
+CLASSES_IDD_ABOUTBOX_PORTRAIT DIALOG  0, 0, 162, 151
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "À propos de"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CLASSES_IDC_TEXT_ABOUT,2,52,156,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_TABSTOP
+    LTEXT           "Placeholder",CLASSES_IDC_STATIC_PLACEHOLDER,6,17,44,8,NOT WS_VISIBLE
+END
+
+CLASSES_IDD_ABOUTBOX_LANDSCAPE DIALOG  0, 0, 210, 129
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "À propos de"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CLASSES_IDC_TEXT_ABOUT,52,30,144,60,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Placeholder",CLASSES_IDC_STATIC_PLACEHOLDER,6,21,44,8,NOT WS_VISIBLE
+END
+
+CLASSES_IDD_PAGE_TOOLFILE DIALOG  0, 0, 150, 149
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Fichier"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Fichier de données:",CLASSES_IDC_STATIC_TOOLFILE,3,2,84,8
+    COMBOBOX        CLASSES_IDC_COMBO_TOOLFILE,3,12,139,12,CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Commentaires:",CLASSES_IDC_STATIC_TOOLFILE_COMMENT,3,27,60,8
+    EDITTEXT        CLASSES_IDC_EDIT_TOOLFILE_COMMENT,3,37,136,36,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Fichier de matières:",CLASSES_IDC_STATIC_MATFILE,3,76,64,8
+    EDITTEXT        CLASSES_IDC_EDIT_MATFILE,3,86,134,12,ES_AUTOHSCROLL
+    LTEXT           "Commentaires:",CLASSES_IDC_STATIC_MATFILE_COMMENT,3,100,60,8
+    EDITTEXT        CLASSES_IDC_EDIT_MATFILE_COMMENT,3,110,138,36,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+END
+
+CLASSES_IDD_PAGE_TOOL DIALOG  0, 0, 150, 101
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Outils"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        CLASSES_IDC_EDIT_TOOL,3,2,106,12,ES_AUTOHSCROLL | WS_DISABLED
+    LISTBOX         CLASSES_IDC_LIST_TOOL,26,35,105,61,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_NEW,0,18,17,9,NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DEL,0,27,17,9,NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_COPY,0,36,17,9,NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_PASTE,0,45,17,9,NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_UP,0,54,17,9,NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DOWN,0,63,17,9,NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "ap:",CLASSES_IDC_STATIC_AP,26,19,12,8
+    EDITTEXT        CLASSES_IDC_EDIT_AP,42,18,22,12,ES_AUTOHSCROLL
+    LTEXT           "ae:",CLASSES_IDC_STATIC_AE,89,19,12,8
+    EDITTEXT        CLASSES_IDC_EDIT_AE,105,18,22,12,ES_AUTOHSCROLL
+    LTEXT           "% D",CLASSES_IDC_STATIC_XD1,66,19,22,8
+    LTEXT           "% D",CLASSES_IDC_STATIC_XD2,129,19,20,8
+END
+
+CLASSES_IDD_NOTOOLFILE DIALOG  0, 0, 162, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Avertissement"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Aucun fichier de définitions d'outils valide n'a été trouvé dans le dossier de l'application.",IDC_STATIC,2,23,158,19
+    LTEXT           "Les pages ""Fichier"", ""Outils"" et ""Conditions"" ne seront pas accessibles.",IDC_STATIC,2,45,158,18
+    LTEXT           "Vous pourrez effectuer des calculs, mais sans le support d'une base de données d'outils.",IDC_STATIC,2,69,158,23
+    LTEXT           "Pour créer une base de données d'outils, sélectionnez ""Nouveau fichier"" dans le menu.",IDC_STATIC,2,93,158,21
+END
+
+CLASSES_IDD_NOMATFILE DIALOG  0, 0, 162, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erreur"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Aucun fichier de définitions de matières n'a été trouvé dans le dossier de l'application.",-1,2,23,158,19
+    LTEXT           "Avant de créer une base de données d'outils, vous devez d'abord créer une base de données de matières avec l'application MatDb.",-1,2,45,158,29
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    CLASSES_IDD_FILE_SAVE_PORTRAIT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 113
+        BOTTOMMARGIN, 104
+    END
+
+    CLASSES_IDD_MATFILE_LOAD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 109
+    END
+
+    CLASSES_IDD_CAT_MISSING_LANDSCAPE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 94
+    END
+
+    CLASSES_IDD_ABOUTBOX_PORTRAIT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 156
+        BOTTOMMARGIN, 128
+    END
+
+    CLASSES_IDD_PAGE_TOOLFILE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 145
+    END
+
+    CLASSES_IDD_PAGE_TOOL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 55
+    END
+
+    CLASSES_IDD_NOTOOLFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 160
+    END
+
+    CLASSES_IDD_NOMATFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CLASSES_IDR_MENU_OK MENU 
+BEGIN
+    MENUITEM "OK",                          IDOK
+END
+
+CLASSES_IDR_MENU_OKCANCEL MENU 
+BEGIN
+    MENUITEM "OK",                          IDOK
+    MENUITEM "Annuler",                     IDCANCEL
+END
+
+CLASSES_IDR_MENU_OKQUIT MENU 
+BEGIN
+    MENUITEM "OK",                          IDOK
+    MENUITEM "Quitter",                     CLASSES_IDM_QUIT
+END
+
+CLASSES_IDR_MENU_YESNO MENU 
+BEGIN
+    MENUITEM "Oui",                         IDYES
+    MENUITEM "Non",                         IDNO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    CLASSES_IDS_ERROR_NOMATFILE 
+                            "Pour créer un fichier d'outils, vous devez d'abord choisir un fichier de matières.\n\nQuitter l'application ?"
+END
+
+STRINGTABLE 
+BEGIN
+    CLASSES_IDS_SAVE_COPY_AS "Enregistrer une copie sous"
+    CLASSES_IDS_COPY_OF     "Copie de "
+    CLASSES_IDS_SAVE_MODIFIED "Enregistrer les modifications apportées ?\n"
+    CLASSES_IDS_FILE_NONAME "sans nom"
+    CLASSES_IDS_SAVE_AS     "Enregistrer sous"
+    CLASSES_IDS_ABOUT       "A propos de "
+    CLASSES_IDS_PROMPT_OVERWRITE 
+                            "Ce fichier existe déjà.\nVoulez-vous le remplacer?"
+    CLASSES_IDS_ERROR_WRKSHPCALC 
+                            "Impossible de lancer WrkShpCalc.exe\n\nFichier introuvable."
+    CLASSES_IDS_DELETE      "Supprimer %s ?"
+    CLASSES_IDS_TOOLFILE_NOT_FOUND 
+                            "Aucun fichier de données n'a été trouvé.\n\nUn nouveau fichier va être créé."
+    CLASSES_IDS_ERROR_NOMATFILE_QUIT 
+                            "Erreur fatale : aucun fichier de matières n'a été trouvé.\n\nL'application va être fermée."
+    CLASSES_IDS_MATFILE_EXT "mtl"
+    CLASSES_IDS_TITLE_MATFILELOADDLG "Nouveau fichier d'outils"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
