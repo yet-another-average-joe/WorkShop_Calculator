@@ -1,7 +1,29 @@
 # WorkShop_Calculator
 Retro coding ! An app collection for the machinist, developped back in the days for Windows CE/Mobile !
 
-I still use these apps in the workshop. Cutting conditions for milling, tapping, turning, drilling + some other widgets. 
+I still use these apps in the workshop. Cutting conditions for milling, tapping, turning, drilling + some other widgets.
+
+More information here :
+
+http://cambouis.com/software/software.htm
+
+http://cambouis.com/software/WorkShopCalc/WrkShpCalc.htm
+
+http://cambouis.com/software/WorkShopCalc/download.htm
+http://cambouis.com/software/WorkShopCalc/emulator.htm
+
+http://cambouis.com/software/WorkShopCalc/Prj_WorkShopCalc.htm
+http://cambouis.com/software/WorkShopCalc/MatDb.htm
+http://cambouis.com/software/WorkShopCalc/DrillCalc.htm
+http://cambouis.com/software/WorkShopCalc/LatheCalc.htm
+http://cambouis.com/software/WorkShopCalc/MillCalc.htm
+http://cambouis.com/software/WorkShopCalc/TapCalc.htm
+http://cambouis.com/software/WorkShopCalc/TireCalc.htm
+http://cambouis.com/software/WorkShopCalc/SystemMetrics.htm
+http://cambouis.com/software/WorkShopCalc/SysColor.htm
+http://cambouis.com/software/WorkShopCalc/NewtonCalc.htm
+http://cambouis.com/software/WorkShopCalc/ThunderCalc.htm
+
 
 In french only. Sources are a mess and will need to be sorted before release (versioning...).
 
