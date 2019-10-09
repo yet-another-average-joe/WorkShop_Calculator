@@ -1,0 +1,213 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "CLASSES_rc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""CLASSES_rc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\WrkShpCalcppc.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WrkShpCalc.ico"
+IDI_DRILLCALC           ICON                    "..\\DrillCalc\\res\\DrillCalc.ico"
+IDI_LATHECALC           ICON                    "..\\LatheCalc\\res\\LatheCalc.ico"
+IDI_MATDB               ICON                    "..\\MatDb\\res\\MatDb.ico"
+IDI_MILLCALC            ICON                    "..\\MillCalc\\res\\MillCalc.ico"
+IDI_SYSCOLOR            ICON                    "..\\SysColor\\res\\SysColor.ico"
+IDI_SYSTEMMETRICS       ICON                    "..\\SystemMetrics\\res\\SystemMetrics.ico"
+IDI_TIRECALC            ICON                    "..\\TireCalc\\res\\TireCalc.ico"
+IDI_NEWTONCALC          ICON                    "..\\NewtonCalc\\res\\NewtonCalc.ico"
+IDI_THUNDERCALC         ICON                    "..\\ThunderCalc\\res\\ThunderCalc.ico"
+IDI_TAPCALC             ICON                    "..\\TapCalc\\res\\TapCalc.ico"
+IDI_PARSERCALC          ICON                    "..\\ParserCalc\\res\\ParserCalc.ico"
+IDI_STOCKCALC           ICON                    "..\\StockCalc\\res\\StockCalc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WRKSHPCALC_DIALOG DIALOG  0, 0, 148, 210
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "WrkShpCalc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "",IDC_BTN_MATDB,6,6,42,36,WS_GROUP
+    PUSHBUTTON      "",IDC_BTN_DRILLCALC,54,6,42,36
+    PUSHBUTTON      "",IDC_BTN_LATHECALC,102,6,42,36
+    PUSHBUTTON      "",IDC_BTN_MILLCALC,6,60,42,36
+    PUSHBUTTON      "",IDC_BTN_SYSCOLOR,6,110,42,36
+    PUSHBUTTON      "",IDC_BTN_SYSTEMMETRICS,55,110,42,36
+    LTEXT           "Matières ",IDC_STATIC,12,43,30,8
+    LTEXT           "Perçage",IDC_STATIC,60,43,33,8
+    LTEXT           "Tournage",IDC_STATIC,108,43,40,8
+    LTEXT           "Fraisage",IDC_STATIC,12,97,35,8
+    LTEXT           "SysColor",IDC_STATIC,11,148,28,8
+    LTEXT           "SystemMetrics",IDC_STATIC,53,148,46,8
+    PUSHBUTTON      "",IDC_BTN_TAPCALC,54,60,42,36
+    LTEXT           "Taraudage",IDC_STATIC,57,98,40,8
+    PUSHBUTTON      "",IDC_BTN_TIRECALC,102,60,42,36
+    LTEXT           "Pneus",IDC_STATIC,112,99,27,8
+    PUSHBUTTON      "",IDC_BTN_THUNDERCALC,102,110,42,36
+    LTEXT           "Orage",IDC_STATIC,112,148,27,8
+    PUSHBUTTON      "",IDC_BTN_NEWTONCALC,6,161,42,36
+    LTEXT           "Chute",IDC_STATIC,17,199,28,8
+    PUSHBUTTON      "",IDC_BTN_PARSERCALC,55,161,42,36
+    LTEXT           "ParserCalc",IDC_STATIC,58,199,37,8
+    PUSHBUTTON      "",IDC_BTN_STOCKCALC,102,161,42,36
+    LTEXT           "StockCalc",IDC_STATIC,105,199,37,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "FileDescription", "Gestionnaire d'applets"
+            VALUE "FileVersion", "1.1.0.1"
+            VALUE "InternalName", "WrkShpCalc"
+            VALUE "LegalCopyright", "© 2010-2013 jft / www.cambouis.com"
+            VALUE "OriginalFilename", "WrkShpCalc.exe"
+            VALUE "ProductName", "Projet WorkShopCalc"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WRKSHPCALC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "WrkShpCalc",                  CLASSES_IDM_WRKSHPCALC
+    MENUITEM "A propos",                    CLASSES_IDM_ABOUT
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\WrkShpCalcppc.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
