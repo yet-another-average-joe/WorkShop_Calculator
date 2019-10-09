@@ -1,0 +1,267 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\CLASSES\CLASSES_rc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\CLASSES\\CLASSES_rc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ParserCalcppc.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ParserCalc.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\icon5.ico"
+IDI_ICON6               ICON                    "res\\icon6.ico"
+IDI_BLACK               ICON                    "res\\black.ico"
+IDI_BLUE                ICON                    "res\\blue.ico"
+IDI_LGREEN              ICON                    "res\\lgreen.ico"
+IDI_PI                  ICON                    "res\\pi.ico"
+IDI_SQRT                ICON                    "res\\sqrt.ico"
+IDI_CALC                ICON                    "res\\equ.ico"
+IDI_DIV                 ICON                    "res\\div.ico"
+IDI_GREY                ICON                    "res\\grey.ico"
+IDI_MINUS               ICON                    "res\\minus.ico"
+IDI_MUL                 ICON                    "res\\mul.ico"
+IDI_PLUS                ICON                    "res\\plus.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_CALC DIALOG  0, 0, 320, 177
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "Calcul"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_EXPR,2,2,154,40,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_RESULT,60,46,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "sin",IDC_SIN,4,71,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "asin",IDC_ASIN,174,60,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "asinh",IDC_ASINH,174,96,24,13,NOT WS_TABSTOP
+    PUSHBUTTON      "cos",IDC_COS,4,84,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "acos",IDC_ACOS,174,72,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "cosh",IDC_COSH,174,36,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "acosh",IDC_ACOSH,174,110,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "tan",IDC_TAN,4,97,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "atan",IDC_ATAN,174,84,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "tanh",IDC_TANH,174,48,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "atanh",IDC_ATANH,174,124,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "exp",IDC_EXP,30,111,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "ln",IDC_LN,30,71,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "int",IDC_INT,4,111,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "abs",IDC_ABS,4,124,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "10^x",IDC_10X,30,124,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "log",IDC_LOG,30,84,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "rad()",IDC_RAD,30,59,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "deg()",IDC_DEG,4,59,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "x^2",IDC_X2,30,137,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_SQRT,30,97,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "X",IDC_X,60,84,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_EQU,132,137,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "(",IDC_PAR_OPEN,84,84,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      ")",IDC_PAR_CLOSE,108,84,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_DIV,132,84,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_MUL,132,97,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "7",IDC_7,60,97,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "8",IDC_8,84,97,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "9",IDC_9,108,97,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_MINUS,132,111,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "4",IDC_4,60,111,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "5",IDC_5,84,111,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "6",IDC_6,108,111,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_PLUS,132,124,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "1",IDC_1,60,124,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "2",IDC_2,84,124,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "3",IDC_3,108,124,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "0",IDC_0,60,137,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      ".",IDC_DOT,108,137,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "^",IDC_POW,4,137,24,12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "sinh",IDC_SINH,174,24,24,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_PI,84,137,24,12,NOT WS_TABSTOP
+    CONTROL         "arc",IDC_ARC,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE,4,46,24,12
+    CONTROL         "hyp",IDC_HYP,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE,30,46,24,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,1,1
+ PRODUCTVERSION 0,1,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "FileDescription", "Calculatrice"
+            VALUE "FileVersion", "0.1.1.1"
+            VALUE "InternalName", "ParserCalc"
+            VALUE "LegalCopyright", "© 2011-2013 jft / www.cambouis.com ; Parser : Ralf Wirtz / www.simplexnumerica.com"
+            VALUE "OriginalFilename", "ParserCalc.exe"
+            VALUE "ProductName", "Projet WorkShopCalc"
+            VALUE "ProductVersion", "0.1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PAGE_CALC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "WrkShpCalc",                  CLASSES_IDM_WRKSHPCALC
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Nouveau fichier",             CLASSES_IDM_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Enregistrer",                 CLASSES_IDM_FILE_SAVE
+        MENUITEM "Enregistrer sous",            CLASSES_IDM_FILE_SAVE_AS
+        MENUITEM "Enregistrer une copie sous",  CLASSES_IDM_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "A propos",                    CLASSES_IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ParserCalc\n\nParserCalc\nParserCalc Files (*.for)\n.for\nParserCalc.Document\nParserlCalc.Document"
+    IDS_FILE_EXT            "for"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ParserCalc"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\ParserCalcppc.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
