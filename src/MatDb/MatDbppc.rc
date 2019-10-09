@@ -1,0 +1,293 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\CLASSES\CLASSES_rc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\CLASSES\\CLASSES_rc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\MatDbppc.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MatDb.ico"
+CLASSES_IDI_ADD         ICON                    "..\\CLASSES\\res\\Add.ico"
+CLASSES_IDI_ADD_DISABLED ICON                    "..\\CLASSES\\res\\Add_d.ico"
+CLASSES_IDI_DEL         ICON                    "..\\CLASSES\\res\\Delete.ico"
+CLASSES_IDI_DEL_DISABLED ICON                    "..\\CLASSES\\res\\Delete_d.ico"
+CLASSES_IDI_EDIT        ICON                    "..\\CLASSES\\res\\Edit.ico"
+CLASSES_IDI_EDIT_DISABLED ICON                    "..\\CLASSES\\res\\Edit_d.ico"
+CLASSES_IDI_CANCEL      ICON                    "..\\CLASSES\\res\\Undo.ico"
+CLASSES_IDI_CANCEL_DISABLED ICON                    "..\\CLASSES\\res\\Undo_d.ico"
+CLASSES_IDI_REC         ICON                    "..\\CLASSES\\res\\Check.ico"
+CLASSES_IDI_REC_DISABLED ICON                    "..\\CLASSES\\res\\Check_d.ico"
+CLASSES_IDI_UP          ICON                    "..\\CLASSES\\res\\Up.ico"
+CLASSES_IDI_UP_DISABLED ICON                    "..\\CLASSES\\res\\Up_d.ico"
+CLASSES_IDI_DOWN        ICON                    "..\\CLASSES\\res\\Down.ico"
+CLASSES_IDI_DOWN_DISABLED ICON                    "..\\CLASSES\\res\\Down_d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "WrkShpCalc",                  CLASSES_IDM_WRKSHPCALC
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Mode édition",                CLASSES_IDM_MODE_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "Nouveau fichier",             CLASSES_IDM_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Enregistrer",                 CLASSES_IDM_FILE_SAVE
+        MENUITEM "Enregistrer sous",            CLASSES_IDM_FILE_SAVE_AS
+        MENUITEM "Enregistrer une copie sous",  CLASSES_IDM_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "A propos",                    CLASSES_IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_DATA DIALOG  0, 0, 150, 145
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Fichier"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Fichier de données:",IDC_STATIC_DATAFILE,3,2,108,8
+    COMBOBOX        IDC_COMBO_DATAFILE,3,12,139,12,CBS_DROPDOWNLIST | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Commentaires:",IDC_STATIC_COMMENT,3,29,104,8
+    EDITTEXT        IDC_EDIT_COMMENT,3,39,142,39,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_PAGE_CAT DIALOG  0, 0, 150, 145
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Classes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_CAT,3,2,143,12,ES_AUTOHSCROLL
+    LTEXT           "ID:",IDC_STATIC_ID,43,19,11,8,WS_DISABLED
+    EDITTEXT        IDC_EDIT_ID,57,17,25,12,ES_AUTOHSCROLL | WS_DISABLED | NOT WS_TABSTOP
+    LISTBOX         IDC_LIST_CAT,35,31,114,114,LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_NEW,0,27,19,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DEL,0,44,17,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_UP,1,62,17,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DOWN,0,79,15,14,NOT WS_VISIBLE
+END
+
+IDD_PAGE_ALLOY DIALOG  0, 0, 150, 145
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Nuances"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_CAT,2,3,147,12,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ALLOY,36,17,79,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_ALLOY,33,31,115,100,LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_NEW,2,25,18,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DEL,3,42,16,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_UP,1,57,14,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",CLASSES_IDC_BUTTON_DOWN,1,73,17,14,NOT WS_VISIBLE
+END
+
+IDD_PAGE_SEARCH DIALOG  0, 0, 150, 145
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Rechercher"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Classe:",IDC_STATIC_CAT,3,2,88,8
+    EDITTEXT        IDC_EDIT_CAT,3,12,146,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Nuance:",IDC_STATIC_ALLOY,3,25,28,8
+    LISTBOX         IDC_LIST_ALLOY,3,35,83,101,LBS_SORT | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "FileDescription", "Matières"
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "MatDb"
+            VALUE "LegalCopyright", "© 2010-2013 jft / www.cambouis.com"
+            VALUE "OriginalFilename", "MatDb.exe"
+            VALUE "ProductName", "Projet WorkShopCalc"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "MatDb\n\nMatDb\nMatDb Files (*.mtl)\n.mtl\nMatDb.Document\nMatDb.Document"
+    IDS_NEW_FILENAME        "Nouveau fichier"
+    IDS_FILE_EXT            "mtl"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MatDb"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_PASTE           "Insère le contenu du presse-papiers\nColler"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\MatDbppc.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
