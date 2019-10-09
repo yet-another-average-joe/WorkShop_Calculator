@@ -1,0 +1,326 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\StockCalcppc.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StockCalc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STOCKCALC_DIALOG DIALOG  0, 0, 149, 160
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "StockCalc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Profil :",IDC_STATIC,2,4,32,8
+    COMBOBOX        IDC_COMBO_SHAPE,40,2,107,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Matière :",IDC_STATIC,2,18,34,8
+    COMBOBOX        IDC_COMBO_MAT,40,17,107,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Largeur (mm) :",IDC_STATIC_DIM1,10,36,84,8
+    EDITTEXT        IDC_EDIT_DIM1,95,34,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Hauteur (mm) :",IDC_STATIC_DIM2,10,50,75,8
+    EDITTEXT        IDC_EDIT_DIM2,95,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Longueur (mm) :",IDC_STATIC,10,64,75,8
+    EDITTEXT        IDC_EDIT_LENGTH,95,62,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Section (mm²) :",IDC_STATIC,10,78,75,8
+    EDITTEXT        IDC_EDIT_SECTION,95,76,40,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Volume (dm³) :",IDC_STATIC,10,92,75,8
+    EDITTEXT        IDC_EDIT_VOLUME,95,90,40,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Masse vol. (kg/dm³) :",IDC_STATIC,10,106,75,8
+    EDITTEXT        IDC_EDIT_DENSITY,95,104,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Masse (kg) :",IDC_STATIC,10,120,75,8
+    EDITTEXT        IDC_EDIT_KG,95,118,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Prix / kg :",IDC_STATIC,10,134,75,8
+    EDITTEXT        IDC_EDIT_EUROS_PER_KG,95,132,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Prix :",IDC_STATIC,10,148,75,8
+    EDITTEXT        IDC_EDIT_EUROS,95,146,40,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_STOCKCALC_DIALOG_WIDE DIALOG  0, 0, 210, 129
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "StockCalc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO : placez ici les contrôles de boîtes de dialogue.",IDC_STATIC_1,57,49,112,23
+END
+
+IDD_MATFILE_MISSING_PORTRAIT DIALOG  0, 0, 162, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erreur"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Aucun fichier de définitions de matières n'a été trouvé dans le dossier de l'application.",IDC_STATIC1,2,23,158,19
+    LTEXT           "Chaque ligne comporte un libellé qui figurera dans la liste ""Matière"", un point virgule, puis la masse volumique. Le séparateur décimal doit impérativement être un point.",IDC_STATIC3,2,73,158,37
+    LTEXT           "Le fichier de paramétrage est un fichier texte pur, nommé StockCalc.txt, et devant se trouver dans le dossier de l'application.",IDC_STATIC2,2,43,158,32
+END
+
+IDD_MATFILE_MISSING_LANSCAPE DIALOG  0, 0, 210, 112
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erreur"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Le fichier de définitions de matières est vide, ou ne contient pas de données valides.",IDC_STATIC1,2,23,206,19
+    LTEXT           "Chaque ligne comporte un libellé qui figurera dans la liste ""Matière"", un point virgule, puis la masse volumique. Le séparateur décimal doit impérativement être un point.",IDC_STATIC3,2,73,207,29
+    LTEXT           "Le fichier de paramétrage est un fichier texte pur, nommé StockCalc.txt, et devant se trouver dans le dossier de l'application.",IDC_STATIC2,2,43,207,29
+END
+
+IDD_MATFILE_INVALID_LANSCAPE DIALOG  0, 0, 210, 112
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erreur"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Le fichier de définitions de matières est vide, ou ne contient pas de données valides.",IDC_STATIC1,2,23,206,19
+    LTEXT           "Chaque ligne comporte un libellé qui figurera dans la liste ""Matière"", un point virgule, puis la masse volumique. Le séparateur décimal doit impérativement être un point.",IDC_STATIC3,2,73,207,29
+    LTEXT           "Le fichier de paramétrage est un fichier texte pur, nommé StockCalc.txt, et devant se trouver dans le dossier de l'application.",IDC_STATIC2,2,43,207,29
+END
+
+IDD_MATFILE_INVALID_PORTRAIT DIALOG  0, 0, 162, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erreur"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Aucun fichier de définitions de matières n'a été trouvé dans le dossier de l'application.",IDC_STATIC1,2,23,158,19
+    LTEXT           "Chaque ligne comporte un libellé qui figurera dans la liste ""Matière"", un point virgule, puis la masse volumique. Le séparateur décimal doit impérativement être un point.",IDC_STATIC3,2,73,158,37
+    LTEXT           "Le fichier de paramétrage est un fichier texte pur, nommé StockCalc.txt, et devant se trouver dans le dossier de l'application.",IDC_STATIC2,2,43,158,32
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "FileDescription", "Calcul de prix des matières"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "StockCalc"
+            VALUE "LegalCopyright", "© 2011-2013 jft / www.cambouis.com"
+            VALUE "OriginalFilename", "StockCalc.exe"
+            VALUE "ProductName", "Projet WorkShopCalc"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_STOCKCALC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_STOCKCALC_DIALOG_WIDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_MATFILE_MISSING_PORTRAIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_MATFILE_MISSING_LANSCAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_MATFILE_INVALID_LANSCAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_MATFILE_INVALID_PORTRAIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "WrkShpCalc",                  CLASSES_IDM_WRKSHPCALC
+    MENUITEM "A propos",                    CLASSES_IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_STOCKCALC_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SHAPE, 0x403, 5, 0
+0x6f52, 0x646e, "\000" 
+    IDC_COMBO_SHAPE, 0x403, 5, 0
+0x7554, 0x6562, "\000" 
+    IDC_COMBO_SHAPE, 0x403, 6, 0
+0x6143, 0x7272, 0x00e9, 
+    IDC_COMBO_SHAPE, 0x403, 10, 0
+0x6552, 0x7463, 0x6e61, 0x6c67, 0x0065, 
+    IDC_COMBO_SHAPE, 0x403, 9, 0
+0x6548, 0x6178, 0x6f67, 0x656e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "StockCalc\n\nStockCalc\nStockCalc Files (*.stk)\n.stk\nStockCalc.Document\nStockCalc.Document"
+    IDS_FILE_NAME           "StockCalc.txt"
+    IDS_DIAM                "Diamètre (mm) :"
+    IDS_DIAM1               "Diamètre 1 (mm) :"
+    IDS_DIAM2               "Diamètre 2 (mm) :"
+    IDS_SIDE                "Côté (mm) :"
+    IDS_WIDTH               "Largeur (mm) :"
+    IDS_HEIGHT              "Hauteur (mm) :"
+    IDS_WIDTHFLATS          "Largeur sur plats (mm) :"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\StockCalcppc.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
