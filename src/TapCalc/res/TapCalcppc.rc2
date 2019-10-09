@@ -1,0 +1,18 @@
+//
+// TapCalcPPC.RC2 - ressources que Microsoft Visual C++ ne modifie pas directement
+//
+
+#ifdef APSTUDIO_INVOKED
+#error ce fichier n'est pas modifiable par Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ajouter ici les ressources modifiées manuellement...
+
+/////////////////////////////////////////////////////////////////////////////
+HI_RES_AWARE CEUX {1}    // désactiver la couche émulation
+            // Supprimer cette ressource pour activer le doublement de pixel
+            // sur les plateformes qui le prennent en charge
+/////////////////////////////////////////////////////////////////////////////
+
