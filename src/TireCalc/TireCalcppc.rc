@@ -1,0 +1,667 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\CLASSES\CLASSES_rc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\CLASSES\\CLASSES_rc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TireCalcppc.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TireCalc.ico"
+IDI_CALC                ICON                    "res\\calc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_DIM DIALOG  0, 0, 147, 151
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Dimensions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_NORM,36,2,111,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Placeholder",IDC_STATIC_PLACEHOLDER,0,21,38,8,NOT WS_VISIBLE
+    LTEXT           "Système:",IDC_STATIC,2,4,30,8
+END
+
+IDD_PAGE_MISC DIALOG  0, 0, 147, 102
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Divers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Marquages divers:",IDC_STATIC,2,2,59,8
+    LISTBOX         IDC_LIST_MISC,2,12,73,48,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MISC,2,63,145,39,ES_MULTILINE | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_NUMPAD DIALOG  0, 0, 90, 129
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Calculer et fermer",IDOK,8,114,77,14
+    PUSHBUTTON      "0",IDC_K0,9,93,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "1",IDC_K1,9,75,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "3",IDC_K3,47,75,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "4",IDC_K4,9,57,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "5",IDC_K5,28,57,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "6",IDC_K6,48,57,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "7",IDC_K7,9,39,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "8",IDC_K8,28,39,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "9",IDC_K9,48,39,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "2",IDC_K2,28,75,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      ".",IDC_DEC,29,94,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "=",IDC_EQUAL,69,95,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "+/-",IDC_CHS,49,95,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "+",IDC_ADD,69,77,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "-",IDC_SUB,70,59,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "*",IDC_MUL,69,39,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "/",IDC_DIV,69,22,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "AC",IDC_AC,48,20,16,16,NOT WS_TABSTOP
+    PUSHBUTTON      "C",IDC_C,27,20,16,16,NOT WS_TABSTOP
+    RTEXT           "Exemple",IDC_DISPLAY,4,6,82,10,WS_BORDER
+    PUSHBUTTON      "1/X",IDC_INV,9,21,16,16,NOT WS_TABSTOP
+END
+
+IDD_ODOMETER DIALOG  0, 0, 156, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Odomètre"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_RATIO,85,47,25,12
+    EDITTEXT        IDC_EDIT_ODO_DEV,85,66,25,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_ODO_DIAM,85,80,25,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Paramétrage odomètre:",IDC_STATIC_PARAM,43,32,80,8
+    LTEXT           "Diamètre (m):",IDC_STATIC_DIAM_ODO,33,82,48,8
+    LTEXT           "Développ. (m):",IDC_STATIC_DEV_ODO,33,68,51,8
+    LTEXT           "Réduction:",IDC_STATIC_RATIO,33,48,36,8
+    PUSHBUTTON      "",IDC_BTN_CALC,109,46,14,14
+END
+
+IDD_PAGE_MEMENTO DIALOG  0, 0, 147, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Memento"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_CHAPTER,2,2,145,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Placeholder",IDC_STATIC_PLACEHOLDER,0,21,38,8,NOT WS_VISIBLE
+END
+
+IDD_CHILD_SIZING_SYSTEM_NUMERIC DIALOG  0, 0, 150, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "7.75 : largeur en pouces.",IDC_STATIC,2,36,135,8
+    LTEXT           "La hauteur est égale à 92% de la largeur si ce nombre se termine par un zéro (ex. 7.50), et à 82% dans le cas contraire (ex. 7.75).",IDC_STATIC,2,60,147,24
+    LTEXT           "14 : diamètre de la jante en pouces",IDC_STATIC,2,48,135,8
+    LTEXT           "exemple: 7.75-14",IDC_STATIC,48,0,58,8
+    LTEXT           "Premier système, utilisé jusqu'à la fin des années 1960.",IDC_STATIC,2,18,147,18
+    LTEXT           "exemple: 7.50.R15LT",IDC_STATIC,48,125,70,8
+    LTEXT           "Système ""Light Truck Numeric"" : similaire au système Numeric. Suffixe ""LT"". Pneus pour utilitaires légers.",IDC_STATIC,2,93,147,29
+    LTEXT           "LT : Light Truck",IDC_STATIC,2,142,64,8
+END
+
+IDD_CHILD_SIZING_SYSTEM_ALPHA_NUMERIC DIALOG  0, 0, 149, 139
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Système introduit en 1968, basé sur la charge admissible du pneu correlée avec sa taille.",IDC_STATIC,2,18,144,24
+    LTEXT           "De ""A"" (le plus petit, charge la plus faible) à ""N"" (le plus grand, charge la plus élevée)",IDC_STATIC,2,47,144,18
+    LTEXT           "exemple : BR78-13",IDC_STATIC,42,0,62,8
+    LTEXT           "B : taille / charge",IDC_STATIC,2,72,72,8
+    LTEXT           "R : structure (R = radial)",IDC_STATIC,2,84,96,8
+    LTEXT           "78 : hauteur en % de la largeur",IDC_STATIC,2,96,126,8
+    LTEXT           "13 : diamètre de la jante en pouces",IDC_STATIC,2,108,135,8
+END
+
+IDD_CHILD_SIZING_SYSTEM_METRIC DIALOG  0, 0, 149, 251
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "185 : largeur en mm",IDC_STATIC,12,18,120,8
+    LTEXT           "60 : rapport d'aspect",IDC_STATIC,12,30,126,8
+    LTEXT           "14 : diamètre de la jante en pouces",IDC_STATIC,12,162,126,8
+    LTEXT           "exemple : 185/60R14 79H",IDC_STATIC,29,0,84,8
+    LTEXT           "R : structure (R=radial)",IDC_STATIC,12,108,76,8
+    LTEXT           "79 : indice de charge",IDC_STATIC,12,175,68,8
+    LTEXT           "H : indice de vitesse",IDC_STATIC,12,186,65,8
+    LTEXT           "Structure : ""R"" pour ""Radial"", ""D"" pour ""Diagonal"", ""B"" pour ""Bias Belted"" (diagonal ceinturé).",IDC_STATIC,2,126,144,24
+    LTEXT           "Le rapport d'aspect (aspect ratio) est le rapport hauteur / largeur exprimé en pourcentage. S'il n'est pas indiqué (ex.: 185R14), alors il est alors égal à 80 ou 82. Si ce nombre est supérieur à 200, alors il désigne le diamètre du pneu en millimètres.",IDC_STATIC,2,48,144,52
+    LTEXT           "Variantes américaines : systèmes ""P Metric"" et ""LT Metric"". Voir par exemple sur le site web de Dunlop USA.",IDC_STATIC,2,204,144,24
+END
+
+IDD_CHILD_SIZING_SYSTEM_MILLIMETRIC DIALOG  0, 0, 149, 120
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Système peu utilisé. Diffère du système ""Metric"" par des jantes spécifiques dont le diamètre est exprimé en millimètres.",IDC_STATIC,4,18,142,30
+    LTEXT           "210 : largeur en mm",IDC_STATIC,12,54,120,8
+    LTEXT           "65 : rapport d'aspect",IDC_STATIC,12,66,126,8
+    LTEXT           "365 : diamètre de jante en millimètres",IDC_STATIC,12,90,126,8
+    LTEXT           "exemple : 210/65R365",IDC_STATIC,42,0,74,8
+    LTEXT           "R : structure (R=radial)",IDC_STATIC,12,78,76,8
+END
+
+IDD_CHILD_SIZING_SYSTEM_FLOTATION DIALOG  0, 0, 149, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Système créé aux USA en 1960 pour l'agriculture : pneu large, basse pression, populaire sur les 4x4.",IDC_STATIC,2,18,136,30
+    LTEXT           "31 : diamètre du pneu en pouces",IDC_STATIC,12,54,106,8
+    LTEXT           "10.5 : largeur en pouces",IDC_STATIC,12,67,80,8
+    LTEXT           "15 : diamètre de la jante en pouces",IDC_STATIC,12,91,114,8
+    LTEXT           "exemple : 31x10.50R15LT",IDC_STATIC,36,0,85,8
+    LTEXT           "R : structure (R=radial)",IDC_STATIC,12,78,76,8
+    LTEXT           "LT : Light Truck (utilitaire léger)",IDC_STATIC,12,102,132,8
+    LTEXT           "La charge est indiquée par une lettre, et dépend de la pression de gonflage. Se référer aux données communiquées par le fabricant.",IDC_STATIC,2,120,144,35
+END
+
+IDD_DIALOG1 DIALOG  0, 0, 316, 207
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,186,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,259,186,50,14
+    LTEXT           "ATTENTION : ",IDC_STATIC,2,66,122,10
+    LTEXT           "Les dimensions obtenues par calcul peuvent différer sensiblement de celles fournies par les manufacturiers. ",IDC_STATIC,10,77,139,27
+    LTEXT           "D'un point de vue réglementaire, un pneu est considéré comme équivalent à la monte d'origine si ses indices de charge et de vitesse sont égaux ou supérieurs, et si son diamètre extérieur théorique est identique à +/- 3% près.",IDC_STATIC,10,106,139,52
+    LTEXT           "Date de fabrication :",IDC_STATIC,2,0,67,8
+    LTEXT           "Elle est indiquée par un groupe de 4 chiffres (ex. 4203). Les deux derniers désignent l'année (03 pour 2003), les deux premiers la semaine de l'année (42ème semaine).",IDC_STATIC,10,18,137,41
+END
+
+IDD_CHILD_REGULATIONS DIALOG  0, 0, 149, 63
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "D'un point de vue réglementaire, un pneu est considéré comme équivalent à la monte d'origine si ses indices de charge et de vitesse sont égaux ou supérieurs, et si son diamètre extérieur théorique est identique à +/- 3% près.",IDC_STATIC,2,0,139,52
+END
+
+IDD_CHILD1 DIALOG  0, 0, 149, 151
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+IDD_CHILD_DOT_AGE_CODE DIALOG  0, 0, 149, 82
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Les deux premiers chiffres indiquent la semaine de l'année (ici : 42ème semaine).",IDC_STATIC,2,24,137,20
+    LTEXT           "La date de fabrication est indiquée par un groupe de 4 chiffres (par exemple 4203).",IDC_STATIC,2,0,143,23
+    LTEXT           "Les deux derniers désignent l'année (03 pour 2003).",IDC_STATIC,2,48,137,24
+END
+
+IDD_CHILD_CE_HOMOLOGATION DIALOG  0, 0, 148, 419
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Pour être autorisés à rouler sur route ouverte, les pneus vendus en Europe doivent comporter un marquage ""E"".",IDC_STATIC,2,0,144,24
+    LTEXT           "Exemple : E2 12345",IDC_STATIC,12,36,64,8
+    LTEXT           "Le nombre suivant la lettre E identifie le pays dans lequel le pneu a été homologué.",IDC_STATIC,2,54,144,18
+    LTEXT           "1 : Allemagne",IDC_STATIC,6,114,54,8
+    LTEXT           "2 : France",IDC_STATIC,6,126,48,8
+    LTEXT           "3 : Italie",IDC_STATIC,6,138,42,8
+    LTEXT           "4 : Pays Bas",IDC_STATIC,6,150,48,8
+    LTEXT           "5 : Suède",IDC_STATIC,6,162,42,8
+    LTEXT           "6 : Belgique",IDC_STATIC,6,174,48,8
+    LTEXT           "7 : Hongrie",IDC_STATIC,6,186,42,8
+    LTEXT           "8 : Rep. Tchèque",IDC_STATIC,6,198,66,8
+    LTEXT           "9 : Espagne",IDC_STATIC,6,210,48,8
+    LTEXT           "10 : Yougoslavie",IDC_STATIC,6,222,60,8
+    LTEXT           "11 : Royaume Uni",IDC_STATIC,6,234,60,8
+    LTEXT           "12 : Autriche",IDC_STATIC,6,246,48,8
+    LTEXT           "13 : Luxembourg",IDC_STATIC,6,258,60,8
+    LTEXT           "14 : Suisse",IDC_STATIC,6,270,42,8
+    LTEXT           "16 : Norvège",IDC_STATIC,6,294,48,8
+    LTEXT           "17 : Finlande",IDC_STATIC,6,306,42,8
+    LTEXT           "18 : Danemark",IDC_STATIC,6,318,48,8
+    LTEXT           "21 : Portugal",IDC_STATIC,6,354,48,8
+    LTEXT           "23 : Grèce",IDC_STATIC,6,378,42,8
+    LTEXT           "24 : Irlande",IDC_STATIC,6,390,42,8
+    LTEXT           "Le groupe de chiffres qui suit est le numéro d'homologation.",IDC_STATIC,2,73,144,18
+    LTEXT           "Codes pays :",IDC_STATIC,2,97,43,8
+    LTEXT           "15 : RDA",IDC_STATIC,6,282,30,8
+    LTEXT           "25 : Croatie",IDC_STATIC,74,114,39,8
+    LTEXT           "26 : Slovénie",IDC_STATIC,74,126,42,8
+    LTEXT           "19 : Roumanie",IDC_STATIC,6,330,47,8
+    LTEXT           "20 : Pologne",IDC_STATIC,6,342,41,8
+    LTEXT           "22 : Russie",IDC_STATIC,6,366,36,8
+    LTEXT           "27 : Slovaquie",IDC_STATIC,74,138,46,8
+    LTEXT           "28 : Biélorussie",IDC_STATIC,74,150,49,8
+    LTEXT           "29 : Estonie",IDC_STATIC,74,162,39,8
+    LTEXT           "30 : (N/A)",IDC_STATIC,74,174,33,8
+    LTEXT           "31 : Bosnie",IDC_STATIC,74,186,36,8
+    LTEXT           "32 : Lettonie",IDC_STATIC,74,198,42,8
+    LTEXT           "33 : (N/A)",IDC_STATIC,74,210,33,8
+    LTEXT           "34 : Bulgarie",IDC_STATIC,74,222,41,8
+    LTEXT           "35 : (N/A)",IDC_STATIC,74,234,33,8
+    LTEXT           "36 : Lituanie",IDC_STATIC,74,246,40,8
+    LTEXT           "37 : Turquie",IDC_STATIC,74,258,40,8
+    LTEXT           "38 : (N/A)",IDC_STATIC,74,270,33,8
+    LTEXT           "39 : Azerbaijan",IDC_STATIC,74,282,50,8
+    LTEXT           "40 : Macédoine",IDC_STATIC,74,294,50,8
+    LTEXT           "41 : (N/A)",IDC_STATIC,74,306,33,8
+    LTEXT           "42 : USA",IDC_STATIC,74,318,29,8
+    LTEXT           "43 : Japon",IDC_STATIC,74,330,35,8
+    LTEXT           "44 : (N/A)",IDC_STATIC,74,342,33,8
+    LTEXT           "45 : Australie",IDC_STATIC,74,354,44,8
+    LTEXT           "46 : Ukraine",IDC_STATIC,74,366,40,8
+    LTEXT           "47 : Afrique du Sud",IDC_STATIC,74,378,73,8
+    LTEXT           "48 : Nouvelle Zélande",IDC_STATIC,74,390,73,8
+END
+
+IDD_PAGE_RATINGS DIALOG  0, 0, 146, 132
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Indices"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_LOAD_INDEX,6,54,24,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPEED_RATING,36,54,24,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Vitesse:",IDC_STATIC_SPEED,66,56,26,8
+    EDITTEXT        IDC_EDIT_SPEED,102,54,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Charge:",IDC_STATIC_LOAD,66,74,26,8
+    EDITTEXT        IDC_EDIT_LOAD,102,72,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ces indices sont regroupés sous la forme d'un nombre suivi d'un code alphanumérique. Le nombre représente l'indice de charge, le code alphanumérique représente l'indice de vitesse.",IDC_STATIC,2,2,144,42
+    LTEXT           "Valable pour les pneus ""Metric"". Le système étant différent pour les pneus ""P-Metric"" et ""Light Truck"", se reporter aux données du fabricant.",IDC_STATIC,2,96,142,36
+END
+
+IDD_CHILD_DIM_NUMERIC DIALOG  0, 0, 149, 147
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_WIDTH,36,0,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ASPECT_RATIO,84,18,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "R",IDC_STATIC,72,2,10,8
+    COMBOBOX        IDC_COMBO_RIM,84,0,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Correction:",IDC_STATIC,18,38,37,8
+    COMBOBOX        IDC_COMBO_CORRECT,60,36,32,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DIAM,108,36,30,30,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dimensions (m):",IDC_STATIC,2,55,59,8
+    LTEXT           "Hauteur:",IDC_STATIC_H,2,73,31,8
+    EDITTEXT        IDC_EDIT_HEIGHT,33,71,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Développement:",IDC_STATIC_DEV,63,73,54,8
+    EDITTEXT        IDC_EDIT_DEV,121,71,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Largeur:",IDC_STATIC_L,2,86,28,8
+    EDITTEXT        IDC_EDIT_WIDTH,33,84,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Diamètre:",IDC_STATIC_DIAM,83,86,33,8
+    EDITTEXT        IDC_EDIT_DIAM,121,84,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Rapport d'aspect:",IDC_STATIC,18,19,58,8
+    LTEXT           "La hauteur est égale à 92% de la largeur si le nombre se termine par zéro (ex. 7.50), sinon il est de 82% (ex. 7.75). Cependant, le rapport d'aspect est souvent 100%.",IDC_STATIC,0,99,147,37
+END
+
+IDD_CHILD_DIM_MILLIMETRIC DIALOG  0, 0, 149, 80
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_WIDTH,12,0,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "/",IDC_STATIC,48,1,10,8
+    COMBOBOX        IDC_COMBO_ASPECT_RATIO,60,0,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "R",IDC_STATIC,96,2,10,8
+    COMBOBOX        IDC_COMBO_RIM,108,0,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Correction:",IDC_STATIC,18,19,37,8
+    COMBOBOX        IDC_COMBO_CORRECT,60,18,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DIAM,108,18,30,30,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dimensions (m):",IDC_STATIC,2,36,59,8
+    LTEXT           "Hauteur:",IDC_STATIC_H,2,54,31,8
+    EDITTEXT        IDC_EDIT_HEIGHT,33,52,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Développement:",IDC_STATIC_DEV,63,54,54,8
+    EDITTEXT        IDC_EDIT_DEV,121,52,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Largeur:",IDC_STATIC_L,2,67,28,8
+    EDITTEXT        IDC_EDIT_WIDTH,33,66,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Diamètre:",IDC_STATIC_DIAM,83,67,33,8
+    EDITTEXT        IDC_EDIT_DIAM,121,66,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+END
+
+IDD_CHILD_DIM_METRIC DIALOG  0, 0, 149, 80
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_WIDTH,12,0,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "/",IDC_STATIC,48,1,10,8
+    COMBOBOX        IDC_COMBO_ASPECT_RATIO,60,0,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "R",IDC_STATIC,96,2,10,8
+    COMBOBOX        IDC_COMBO_RIM,108,0,28,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Correction:",IDC_STATIC,18,19,37,8
+    COMBOBOX        IDC_COMBO_CORRECT,60,18,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DIAM,108,18,30,30,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dimensions (m):",IDC_STATIC,2,36,59,8
+    LTEXT           "Hauteur:",IDC_STATIC_H,2,54,31,8
+    EDITTEXT        IDC_EDIT_HEIGHT,33,52,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Développement:",IDC_STATIC_DEV,63,54,54,8
+    EDITTEXT        IDC_EDIT_DEV,121,52,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Largeur:",IDC_STATIC_L,2,67,28,8
+    EDITTEXT        IDC_EDIT_WIDTH,33,66,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Diamètre:",IDC_STATIC_DIAM,83,67,33,8
+    EDITTEXT        IDC_EDIT_DIAM,121,66,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+END
+
+IDD_CHILD_DIM_FLOTATION DIALOG  0, 0, 149, 104
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_WIDTH,60,0,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "X",IDC_STATIC,48,2,10,8
+    COMBOBOX        IDC_COMBO_ASPECT_RATIO,108,18,30,30,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "R",IDC_STATIC,96,2,10,8
+    COMBOBOX        IDC_COMBO_RIM,108,0,28,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Correction:",IDC_STATIC,18,19,37,8
+    COMBOBOX        IDC_COMBO_CORRECT,60,18,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DIAM,12,0,30,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dimensions (m):",IDC_STATIC,2,36,59,8
+    LTEXT           "Hauteur:",IDC_STATIC_H,2,54,31,8
+    EDITTEXT        IDC_EDIT_HEIGHT,33,52,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Développement:",IDC_STATIC_DEV,63,54,54,8
+    EDITTEXT        IDC_EDIT_DEV,121,52,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Largeur:",IDC_STATIC_L,2,67,28,8
+    EDITTEXT        IDC_EDIT_WIDTH,33,66,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Diamètre:",IDC_STATIC_DIAM,83,67,33,8
+    EDITTEXT        IDC_EDIT_DIAM,121,66,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Rapport d'aspect:",IDC_STATIC,24,86,58,8
+    EDITTEXT        IDC_EDIT_ASPECT_RATIO,84,84,26,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CHILD_DIM_METRIC80 DIALOG  0, 0, 149, 98
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO_WIDTH,36,0,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ASPECT_RATIO,84,18,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "R",IDC_STATIC,72,2,10,8
+    COMBOBOX        IDC_COMBO_RIM,84,0,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Correction:",IDC_STATIC,18,38,37,8
+    COMBOBOX        IDC_COMBO_CORRECT,60,36,32,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DIAM,108,36,30,30,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dimensions (m):",IDC_STATIC,2,55,59,8
+    LTEXT           "Hauteur:",IDC_STATIC_H,2,73,31,8
+    EDITTEXT        IDC_EDIT_HEIGHT,33,71,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Développement:",IDC_STATIC_DEV,63,73,54,8
+    EDITTEXT        IDC_EDIT_DEV,121,71,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Largeur:",IDC_STATIC_L,2,86,28,8
+    EDITTEXT        IDC_EDIT_WIDTH,33,84,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Diamètre:",IDC_STATIC_DIAM,83,86,33,8
+    EDITTEXT        IDC_EDIT_DIAM,121,84,26,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_NOPARENTNOTIFY | WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Rapport d'aspect:",IDC_STATIC,18,19,58,8
+END
+
+IDD_PAGEDIMCHILD DIALOG  0, 0, 156, 129
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Boîte de dialogue"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "FileDescription", "Pneumatiques"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "TireCalc"
+            VALUE "LegalCopyright", "© 2011-2013 jft / www.cambouis.com"
+            VALUE "OriginalFilename", "TireCalc.exe"
+            VALUE "ProductName", "Projet WorkShopCalc"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PAGE_DIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_PAGE_MISC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_NUMPAD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_PAGE_MEMENTO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 92
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_CHILD_SIZING_SYSTEM_NUMERIC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 141
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_CHILD_SIZING_SYSTEM_ALPHA_NUMERIC, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_CHILD_SIZING_SYSTEM_METRIC, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_CHILD_SIZING_SYSTEM_MILLIMETRIC, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_CHILD_SIZING_SYSTEM_FLOTATION, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_CHILD_REGULATIONS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 148
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_CHILD1, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_CHILD_DOT_AGE_CODE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_CHILD_CE_HOMOLOGATION, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 413
+    END
+
+    IDD_PAGE_RATINGS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_CHILD_DIM_NUMERIC, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_CHILD_DIM_FLOTATION, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_CHILD_DIM_METRIC80, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_PAGEDIMCHILD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "WrkShpCalc",                  CLASSES_IDM_WRKSHPCALC
+    MENUITEM "A propos",                    CLASSES_IDM_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TireCalc"
+    IDS_SIZING_SYSTEM_NUMERIC "Système ""Numeric"""
+    IDS_SIZING_SYSTEM_ALPHA_NUMERIC "Système ""Alpha-Numéric"""
+    IDS_SIZING_SYSTEM_METRIC "Système ""Metric"""
+    IDS_SIZING_SYSTEM_MILLIMETRIC "Système ""Millimetric"""
+    IDS_SIZING_SYSTEM_FLOTATION "Système ""Flotation"""
+    IDS_REGULATIONS         "Aspects règlementaires"
+    IDS_DOT_AGE_CODE        "Date de fabrication"
+    IDS_CE_HOMOLOGATION     "Conformité CE"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\TireCalcppc.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
