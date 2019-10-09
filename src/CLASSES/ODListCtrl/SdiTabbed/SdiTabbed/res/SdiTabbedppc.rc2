@@ -1,0 +1,34 @@
+//
+// SdiTabbedPPC.RC2 - ressources que Microsoft Visual C++ ne modifie pas directement
+//
+
+#ifdef APSTUDIO_INVOKED
+#error ce fichier n'est pas modifiable par Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ajouter ici les ressources modifiées manuellement...
+
+/////////////////////////////////////////////////////////////////////////////
+HI_RES_AWARE CEUX {1}    // désactiver la couche émulation
+            // Supprimer cette ressource pour activer le doublement de pixel
+            // sur les plateformes qui le prennent en charge
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SHMENUBAR
+//
+
+IDR_MAINFRAME SHMENUBAR DISCARDABLE
+BEGIN
+    IDR_MAINFRAME, 
+    2,
+    
+    I_IMAGENONE, ID_FILE_NEW, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE,
+    IDS_NEW, 0, NOMENU,
+
+    I_IMAGENONE, IDM_MENU, TBSTATE_ENABLED, TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE,
+    IDS_MENU, 0, 0,
+END
