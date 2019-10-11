@@ -10,4 +10,4 @@ It was developped using Windows XP/7 32 bits, with Microsoft Visual Studio 2005 
 
 These apps still works great...
 
- SD_card folder : all executables and an autorun : just insert the card in one of these old devices, and the laucher app will pop up.
+ SD_card folder : all executables and an autorun : just insert the card in one of these old devices, and the launcher app will pop up.
